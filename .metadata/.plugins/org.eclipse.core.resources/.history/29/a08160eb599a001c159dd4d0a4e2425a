@@ -1,0 +1,5 @@
+package com.superflex.api.usuario.models.dao;
+
+public interface UsuariosDao {
+
+}

@@ -1,0 +1,6 @@
+package com.superflex.api.usuario.models.service;
+
+public interface IUsuarioService {
+
+	
+}

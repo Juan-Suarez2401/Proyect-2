@@ -1,0 +1,3 @@
+spring.application.name=servicio-usuario
+server.port=8070
+

@@ -1,0 +1,11 @@
+package com.superflex.api.usuario.controllers;
+
+import org.hibernate.cfg.Environment;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UsuariosController {
+
+	private Environment env;
+	
+}

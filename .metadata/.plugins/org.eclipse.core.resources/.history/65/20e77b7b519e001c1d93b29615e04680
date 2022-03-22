@@ -1,0 +1,55 @@
+package com.superflex.springboot.app.usuario.models;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "usuarios")
+public class Usuarios {
+	
+	@Id
+	private Long cedula;
+	private String tipo_cedula;
+	private String nombre;
+	
+
+	@OneToOne(mappedBy = "usuarios")
+	private List<Usuarios> usuremitente;
+	
+	@OneToMany(mappedBy = "usuarios")
+	private List<Usuarios> usuarios;
+	
+	
+	
+	public Usuarios() {
+		super();
+
+	}
+	public Long getCedula() {
+		return cedula;
+	}
+	public void setCedula(Long cedula) {
+		this.cedula = cedula;
+	}
+	public String getTipoCedula() {
+		return tipo_cedula;
+	}
+	public void setTipoCedula(String tipoCedula) {
+		this.tipo_cedula = tipoCedula;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	
+}

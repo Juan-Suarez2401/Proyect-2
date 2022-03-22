@@ -1,0 +1,5 @@
+package com.superflex.api.usuario.controllers;
+
+public class UsuariosController {
+
+}

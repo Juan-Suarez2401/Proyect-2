@@ -1,0 +1,9 @@
+package com.superflex.api.usuario.models.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UsuariosServiceImpl {
+	
+
+}

@@ -1,0 +1,6 @@
+spring.application.name=servicio-usuario
+server.port=8070
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/Db-SuperFlex
+spring.datasource.username=postgres
+spring.datasource.password:2401

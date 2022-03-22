@@ -1,0 +1,5 @@
+package com.superfelx.api.usuario.models.entity;
+
+public class usuarios {
+
+}

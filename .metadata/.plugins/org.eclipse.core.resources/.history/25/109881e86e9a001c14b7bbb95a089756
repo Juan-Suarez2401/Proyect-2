@@ -1,0 +1,52 @@
+package com.superfelx.api.usuario.models.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+@Table(name = "usuariosgiros")
+
+public class Usuarios{
+	
+	@Id
+	private Integer numerocc;
+	
+	private String nombre;
+	
+	@JsonIgnore
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name="tipodocuemnto")
+	private Integer tipoDocumento;
+
+	public Integer getNumerocc() {
+		return numerocc;
+	}
+
+	public void setNumerocc(Integer numerocc) {
+		this.numerocc = numerocc;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Integer getTipodocuemnto() {
+		return tipoDocumento;
+	}
+
+	public void setTipodocuemnto(Integer tipodocuemnto) {
+		this.tipoDocumento = tipodocuemnto;
+	}
+	
+}

@@ -1,0 +1,6 @@
+spring.application.name=servicio-usuario
+server.port=8002
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/clinica
+spring.datasource.username=postgres
+spring.datasource.password:2401

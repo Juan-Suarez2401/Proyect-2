@@ -1,0 +1,38 @@
+package com.superflex.api.usuario.models.service;
+
+import java.util.List;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.superfelx.api.usuario.models.entity.Usuarios;
+import com.superflex.api.usuario.models.dao.UsuariosDao;
+
+@Service
+public class UsuariosServiceImpl implements IUsuarioService {
+	
+	@Autowired
+	private UsuariosDao usuariosDao;
+	
+	@Override
+	@Transactional(readOnly= true)
+	public List<Usuarios> findAll(){
+		return (List<Usuarios>) usuariosDao.findAll();
+	}
+	
+	@Transactional(readOnly= true)
+	public Usuarios finById(Integer numerocc) {
+		return usuariosDao.findById(numerocc).orElse(null);
+	}
+	
+	public Usuarios save(Usuarios usuarios) {
+		return usuariosDao.save(usuarios);
+	}
+	
+	public void delete(Integer numerocc) {
+		usuariosDao.deleteById(numerocc);
+	}
+
+}

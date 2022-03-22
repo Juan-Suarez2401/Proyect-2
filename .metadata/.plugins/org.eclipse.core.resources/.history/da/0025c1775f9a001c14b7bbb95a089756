@@ -1,0 +1,14 @@
+package com.superflex.api.usuario.models.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.superflex.api.usuario.models.dao.UsuariosDao;
+
+@Service
+public class UsuariosServiceImpl {
+	
+	@Autowired
+	private UsuariosDao usuariosDao;
+
+}

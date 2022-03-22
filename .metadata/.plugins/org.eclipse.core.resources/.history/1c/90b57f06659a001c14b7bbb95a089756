@@ -1,0 +1,46 @@
+package com.superfelx.api.usuario.models.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "usuariosgiros")
+
+public class Usuarios{
+	
+	@Id
+	private Integer numerocc;
+	
+	private String nombre;
+	
+	private Integer tipodocuemnto;
+	
+	@Transient
+	private Integer port;
+
+	public Integer getNumerocc() {
+		return numerocc;
+	}
+
+	public void setNumerocc(Integer numerocc) {
+		this.numerocc = numerocc;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Integer getTipodocuemnto() {
+		return tipodocuemnto;
+	}
+
+	public void setTipodocuemnto(Integer tipodocuemnto) {
+		this.tipodocuemnto = tipodocuemnto;
+	}
+	
+}

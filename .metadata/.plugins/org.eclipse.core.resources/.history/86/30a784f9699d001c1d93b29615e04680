@@ -1,0 +1,13 @@
+package com.superflex.springboot.app.giro;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SuperFelxServicioEnvioGrioApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SuperFelxServicioEnvioGrioApplication.class, args);
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.superflex.api.usuario.models.service;
+
+import java.util.List;
+
+import com.superfelx.api.usuario.models.entity.Usuarios;
+
+public interface IUsuarioService {
+
+	public List<Usuarios> findAll();
+	
+}

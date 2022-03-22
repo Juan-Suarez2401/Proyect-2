@@ -1,0 +1,17 @@
+package com.superflex.api.usuario.controllers;
+
+import org.hibernate.cfg.Environment;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.superflex.api.usuario.models.service.IUsuarioService;
+
+@RestController
+public class UsuariosController {
+
+	@Autowired
+	private Environment env;
+	
+	private IUsuarioService usuarioService;
+	
+}

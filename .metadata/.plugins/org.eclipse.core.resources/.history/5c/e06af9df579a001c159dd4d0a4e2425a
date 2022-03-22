@@ -1,0 +1,5 @@
+package com.superflex.api.models.entity;
+
+public class usuarios {
+
+}
