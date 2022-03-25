@@ -1,10 +1,10 @@
 eclipse.preferences.version=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka=11
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka-server=6
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=10
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=16
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.postgresql=12
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=15
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=11
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=18
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.postgresql=13
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=16
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=prueba
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.6.4
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=demon.prueba
